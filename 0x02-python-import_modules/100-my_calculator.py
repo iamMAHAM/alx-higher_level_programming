@@ -23,6 +23,5 @@ if __name__ == "__main__":
             result = mul(a, b)
         else:
             result = div(a, b)
-    
     print("{} {} {} = {}".format(a, operator, b, result))
     exit(0)
