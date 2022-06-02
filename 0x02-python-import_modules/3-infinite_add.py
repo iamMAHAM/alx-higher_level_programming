@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-from sys import argv
 
-def add():
+if __name__ == "__main__":
+    from sys import argv
     sum = 0
     for i in range(len(argv)):
         sum += int(argv[i]) if i > 0 else 0
-    return sum
-
-if __name__ == "__main__":
-    print(add())
+    print(sum)
