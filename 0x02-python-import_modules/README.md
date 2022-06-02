@@ -46,6 +46,8 @@ Write a program that prints the number of and the list of its arguments.
 * You do not have to fully understand lists yet, but imagine that argv can be used just like a C array: you can use an index to walk through it. There are other ways (which will be preferred for future project tasks), if you know them you can use them.
 
 ## 3. Infinite addition
+
+<img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/621c6dd72e1acff708141f3fab6dfa6ff37c5ee6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220602%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220602T113209Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=af170234b77bfda4e3b6a4b2434136bbf3ec90a4e3b8e8a86e55b1e9a3f2fe71">
 Write a program that prints the result of the addition of all arguments
 
 * The output should be the result of the addition of all arguments, followed by a new line
