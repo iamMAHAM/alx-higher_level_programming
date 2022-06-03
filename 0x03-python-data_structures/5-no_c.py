@@ -9,10 +9,4 @@ def no_c(my_string):
             pass
         else:
             output_string.append(my_string[i])
-    
     return "".join(output_string)
-
-
-print(no_c("Best School"))
-print(no_c("Chicago"))
-print(no_c("C is fun!"))
