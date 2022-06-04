@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-import string
-
 
 def no_c(my_string):
     output_string = []
