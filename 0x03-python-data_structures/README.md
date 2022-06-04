@@ -144,6 +144,8 @@ Since we now know a bit of C, we can look at what is happening under the hood of
 * All your files will be interpreted/compiled on Ubuntu 14.04 LTS
 Create a C function that prints some basic info about Python lists.
 
+<img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/7e7834b535261d05532fb80a9304f7051c4ad7ac.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220604%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220604T093303Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=1f221991f2f7fafe1d52fb2ab3d0daeb4992feb4faa568bd25ef87cb537adb71">
+
 * Prototype: void print_python_list_info(PyObject *p);
 * Format: see example
 * Python version: 3.4
