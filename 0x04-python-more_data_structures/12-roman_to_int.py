@@ -8,9 +8,42 @@ def roman_to_int(roman_string):
     if type(roman_string) != str or roman_string is None:
         return output
 
+    behind = None
     for letter in roman_string:
         if letter not in numbers.keys():
             pass
         else:
-            output += numbers.get(letter)
+            number = numbers.get(letter)
+            if behind is None:
+                output = number
+                behind = number
+                continue
+            elif behind < number:
+                output = output + number - behind * 2
+            else:
+                output += number
+
+            behind = number
+
     return output
+
+
+roman_to_int = __import__('12-roman_to_int').roman_to_int
+
+roman_number = "X"
+print("{} = {}".format(roman_number, roman_to_int(roman_number)))
+
+roman_number = "VII"
+print("{} = {}".format(roman_number, roman_to_int(roman_number)))
+
+roman_number = "IX"
+print("{} = {}".format(roman_number, roman_to_int(roman_number)))
+
+roman_number = "LXXXVII"
+print("{} = {}".format(roman_number, roman_to_int(roman_number)))
+
+roman_number = "DCCVII"
+print("{} = {}".format(roman_number, roman_to_int(roman_number)))
+
+roman_number = "XXI"
+print("{} = {}".format(roman_number, roman_to_int(roman_number)))
