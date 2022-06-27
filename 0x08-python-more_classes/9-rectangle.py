@@ -62,6 +62,10 @@ class Rectangle:
 
         return 2 * (self.__width + self.__height)
 
+    @classmethod
+    def square(cls, size=0):
+        return Rectangle(size, size)
+
     def __str__(self):
         """print the representation of a rectangle Objects"""
 
