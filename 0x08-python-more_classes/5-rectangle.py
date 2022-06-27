@@ -3,10 +3,6 @@
 """Class for an empty rectangle"""
 
 
-from sqlite3 import Row
-from tkinter import W
-
-
 class Rectangle:
     """this is a rectangle class"""
 
