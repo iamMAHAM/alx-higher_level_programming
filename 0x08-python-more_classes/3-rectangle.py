@@ -59,7 +59,8 @@ class Rectangle:
 
         return 2 * (self.__width + self.__height)
 
-    def __str__(self) -> str:
+    def __str__(self):
+        """print the representation of a rectangle Objects"""
         if (self.perimeter() != 0):
             for i in range(self.__height):
                 print("#" * self.__width)
