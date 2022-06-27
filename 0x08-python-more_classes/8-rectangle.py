@@ -3,9 +3,6 @@
 """Class for an empty rectangle"""
 
 
-from cmath import isnan
-
-
 class Rectangle:
     """this is a rectangle class"""
     number_of_instances = 0
