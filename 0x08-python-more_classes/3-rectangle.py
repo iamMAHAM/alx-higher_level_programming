@@ -60,6 +60,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self) -> str:
-        for i in range(self.__height):
-            print("#" * self.__width)
+        if (self.perimeter() != 0):
+            for i in range(self.__height):
+                print("#" * self.__width)
         return ("")
