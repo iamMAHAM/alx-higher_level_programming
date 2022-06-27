@@ -58,3 +58,10 @@ class Rectangle:
             return 0
 
         return 2 * (self.__width + self.__height)
+
+    def __str__(self) -> str:
+        i = 0
+        j = 0
+        for i in range(self.__height):
+            print("#" * self.__width)
+        return ("")
