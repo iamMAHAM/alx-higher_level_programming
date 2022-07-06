@@ -4,4 +4,4 @@
 
 
 def lookup(object):
-    return list(object.__dict__)
+    return dir(object)
