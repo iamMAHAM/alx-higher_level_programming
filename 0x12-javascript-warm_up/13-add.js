@@ -1,6 +1,6 @@
 #!/usr/bin/node
 module.exports = {
-  add: (a, b) => {
+  add: function (a, b) {
     return a + b;
   }
 };
