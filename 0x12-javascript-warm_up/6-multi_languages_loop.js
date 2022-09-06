@@ -1,3 +1,5 @@
-#!/usr/bin/node
+// #!/usr/bin/node
 const strings = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-strings.forEach(s=>console.log(s));
+for (let i = 0; i < strings.length; i++) {
+  console.log(strings[i]);
+}
