@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-python script that lists all states from the database hbtn_0e_0_usa
+python script that lists all states with a name starting with N (upper N)
+from the database hbtn_0e_0_usa
 """
 
 import MySQLdb
@@ -12,7 +13,7 @@ if __name__ == "__main__":
     cursor = db.cursor()
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
     states = cursor.fetchall()
-    for state in states:
-        print(state)
+    for (i, v) in states:
+        print((i, v))
     cursor.close()
     db.close()
