@@ -3,19 +3,16 @@
 lists all State objects from a database
 """
 
-
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy import sessionmaker
 from sys import argv
-from model_state import Base, State
+from model_state import State, Base
 
-if __name__ == "__main__":
-    eng = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(argv[1],
-                                                                    argv[2],
-                                                                    argv[3]))
-    Base.metadata.create_all(eng)
-    Session = sessionmaker(bind=eng)
+if __name__ == '__main__':
+    engine = create_engine(f'mysql+mysqldb://{argv[1]}:{argv[2]}@localhost/{argv[3]}')
+    Base.metadata.create_all(engine)
+    Session = sessionmaker(bind=engine)
     session = Session()
     for state in session.query(State).order_by(State.id):
-        print("{}: {}".format(state.id, state.name))
+        print(f"{state.id}: {state.id}")
     session.close()
