@@ -3,6 +3,7 @@
 lists all State objects from a database
 """
 
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
