@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+$('document').ready(() => {
   const LI = '<li>Item</li>';
   const ul = $('UL.my_list');
 
